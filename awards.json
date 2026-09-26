@@ -1,0 +1,26 @@
+[
+  {
+    "Year": "2024",
+    "Competition": "Olympic Games Paris",
+    "Event": "100m",
+    "Medal": "Gold"
+  },
+  {
+    "Year": "2023",
+    "Competition": "World Championships Budapest",
+    "Event": "100m",
+    "Medal": "Gold"
+  },
+  {
+    "Year": "2023",
+    "Competition": "World Championships Budapest",
+    "Event": "200m",
+    "Medal": "Gold"
+  },
+  {
+    "YEAR": "2022",
+    "COMPETITION": "World Championships Eugene",
+    "EVENT": "200m",
+    "MEDAL": "Gold"
+  }
+]
