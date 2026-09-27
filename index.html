@@ -1,140 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noah Lyles Biography - SPA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>Noah Lyles</header>
+      <header>Noah Lyles</header>
 
-        <nav>
-            <ul>
-                <li><a href="#" id="nav-bio">Biography</a></li>
-                <li><a href="#" id="nav-photos">Photos</a></li>
-                <li><a href="#" id="nav-distinction">Distinction</a></li>
-                <li><a href="#" id="nav-links">Links</a></li>
-                <li><a href="#" id="nav-management">Management</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#" id="nav-bio">Biography</a></li>
+          <li><a href="#" id="nav-photos">Photos</a></li>
+          <li><a href="#" id="nav-distinction">Distinction</a></li>
+          <li><a href="#" id="nav-links">Links</a></li>
+          <li><a href="#" id="nav-management">Management</a></li>
+        </ul>
+      </nav>
 
-        <aside>
-            <div id="aside-bio" class="aside-section">
-                <h3>Biography Sections</h3>
-                <ul>
-                    <li><a href="#" class="bio-link" data-target="bio-early">Early Years</a></li>
-                    <li><a href="#" class="bio-link" data-target="bio-pro">Professional Years</a></li>
-                </ul>
-            </div>
+      <aside>
+        <div id="aside-bio" class="aside-section">
+          <h3>Biography Sections</h3>
+          <ul>
+            <li>
+              <a href="#" class="bio-link" data-target="bio-early">
+                Early Years
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bio-link" data-target="bio-pro">
+                Professional Years
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <div id="aside-photos" class="aside-section hidden">
-                <h3>Photo Categories</h3>
-                <ul>
-                    <li><a href="#" class="photo-filter" data-category="training">Training</a></li>
-                    <li><a href="#" class="photo-filter" data-category="race">Races</a></li>
-                </ul>
-            </div>
+        <div id="aside-photos" class="aside-section hidden">
+          <h3>Photo Categories</h3>
+          <ul>
+            <li>
+              <a href="#" class="photo-filter" data-category="training">
+                Training
+              </a>
+            </li>
+            <li>
+              <a href="#" class="photo-filter" data-category="race">Races</a>
+            </li>
+          </ul>
+        </div>
 
-            <div id="aside-distinction" class="aside-section hidden">
-                <h3>Achievements</h3>
-                <ul>
-                    <li><a href="#" class="fetch-trigger" data-fetch="awards">All Awards</a></li>
-                </ul>
-            </div>
+        <div id="aside-distinction" class="aside-section hidden">
+          <h3>Achievements</h3>
+          <ul>
+            <li>
+              <a href="#" class="fetch-trigger" data-fetch="awards">
+                All Awards
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <div id="aside-links" class="aside-section hidden">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="#" class="fetch-trigger" data-fetch="links">Useful Links</a></li>
-                </ul>
-            </div>
+        <div id="aside-links" class="aside-section hidden">
+          <h3>Resources</h3>
+          <ul>
+            <li>
+              <a href="#" class="fetch-trigger" data-fetch="links">
+                Useful Links
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <div id="aside-admin" class="aside-section hidden">
-                <h3>Admin Options</h3>
-                <ul>
-                    <li id="menu-login"><a href="#">Login</a></li>
-                    <li id="menu-logout" class="hidden"><a href="#">Logout</a></li>
-                    <li id="menu-manage-awards" class="hidden"><a href="#">Manage Awards</a></li>
-                    <li id="menu-manage-links" class="hidden"><a href="#">Manage Links</a></li>
-                </ul>
-            </div>
-        </aside>
+        <div id="aside-admin" class="aside-section hidden">
+          <h3>Admin Options</h3>
+          <ul>
+            <li id="menu-login"><a href="#">Login</a></li>
+            <li id="menu-logout" class="hidden"><a href="#">Logout</a></li>
+            <li id="menu-manage-awards" class="hidden">
+              <a href="#">Manage Awards</a>
+            </li>
+            <li id="menu-manage-links" class="hidden">
+              <a href="#">Manage Links</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        <main id="main-content">
-            <section id="welcome-msg">
-                <h2>Welcome to Noah Lyles Biography</h2>
-                <p>Select a category from the menu to start.</p>
-            </section>
+      <main id="main-content">
+        <section id="welcome-msg">
+          <h2>Welcome to Noah Lyles Biography</h2>
+          <p>Select a category from the menu to start.</p>
+        </section>
 
-            <section id="content-bio" class="hidden">
-                <div id="bio-early" class="bio-part">
-                    <h2>Early Years</h2>
-                    <p>Noah Lyles was born on July 18, 1997, in Gainesville, Florida, to Keisha Caine Bishop and Kevin Lyles. His parents met as students at Seton Hall University, where they both competed in track and field. He has two siblings, Josephus and Abby. Following their parents’ divorce, Lyles and his siblings relocated with their mother to Alexandria, Virginia.</p>
-                    <p>During his early years, Lyles was homeschooled while growing up with asthma, but was later able to attend public school. Although he was originally a gymnast, he took up track and field at the age of 12. A defining moment occurred while watching the 2012 Summer Olympics on TV, when he and his brother declared their intention to run together at the 2016 Summer Games. He attended T. C. Williams High School (now Alexandria City High School).</p>
-                </div>
+        <section id="content-bio" class="hidden">
+          <div id="bio-early" class="bio-part">
+            <h2>Early Years</h2>
+            <p>
+              Noah Lyles was born on July 18, 1997, in Gainesville, Florida, to
+              Keisha Caine Bishop and Kevin Lyles. His parents met as students
+              at Seton Hall University, where they both competed in track and
+              field. He has two siblings, Josephus and Abby. Following their
+              parents’ divorce, Lyles and his siblings relocated with their
+              mother to Alexandria, Virginia.
+            </p>
+            <p>
+              During his early years, Lyles was homeschooled while growing up
+              with asthma, but was later able to attend public school. Although
+              he was originally a gymnast, he took up track and field at the age
+              of 12. A defining moment occurred while watching the 2012 Summer
+              Olympics on TV, when he and his brother declared their intention
+              to run together at the 2016 Summer Games. He attended T. C.
+              Williams High School (now Alexandria City High School).
+            </p>
+          </div>
 
-                <div id="bio-pro" class="bio-part hidden">
-                    <h2>Professional Years</h2>
-                    <p>Lyles’ professional development began to accelerate when he represented the United States at the 2014 Youth Olympic Games, winning a gold medal in the 200 m.</p>
-                    <p>His transition to elite competition included several key milestones:
-                        High School Success: In January 2015, as a high school junior, he cleared 2.03 m (6 ft 7¾ in) in the high jump. By November 2015, he was named the 2015 high school boys athlete of the year by Track & Field News.
-                        2016 Breakthroughs: In March 2016, he won the 200 m at the New Balance Nationals Indoor. In April 2016, he swept the 100 m and 200 m at the Arcadia Invitational. In June 2016, he won the 100 m in 10.08 s at the USA Junior Championships.</p>
-                    <p>Olympic Trials & World U20: In July 2016, he competed at the U.S. Olympic Trials. While he did not advance in the 100 m, he won his 200 m semi-final and placed fourth in the final with a time of 20.09 s, breaking a 31-year-old national high school record. Although he narrowly missed the 2016 Olympic team, he went on to become a double gold medalist at the 2016 World U20 Championships, winning the 100 m and the 4 × 100 m relay titles.</p>
-                    <p>The Rise to Global Dominance (2017–2019): At the World Championships in Doha in 2019, he captured his first major outdoor titles, winning gold in the 200 m and the 4x100 m relay. In 2022 in Eugene, Lyles defended his 200 m title in spectacular fashion, clocking 19.31 seconds and shattering Michael Johnson’s 26-year-old American record.</p>
-                    <p>Achieving the "Treble" and Olympic Glory (2023–2024): In 2023 in Budapest, Lyles achieved a historic "sprint treble," winning three gold medals (100 m, 200 m, and 4x100 m relay). At the 2024 Paris Olympics, Lyles fulfilled his lifelong dream by winning the Olympic Gold medal in the 100 m in a historic photo finish.</p>
-                </div>
-            </section>
+          <div id="bio-pro" class="bio-part hidden">
+            <h2>Professional Years</h2>
+            <p>
+              Lyles’ professional development began to accelerate when he
+              represented the United States at the 2014 Youth Olympic Games,
+              winning a gold medal in the 200 m.
+            </p>
+            <p>
+              His transition to elite competition included several key
+              milestones: High School Success: In January 2015, as a high school
+              junior, he cleared 2.03 m (6 ft 7¾ in) in the high jump. By
+              November 2015, he was named the 2015 high school boys athlete of
+              the year by Track & Field News. 2016 Breakthroughs: In March 2016,
+              he won the 200 m at the New Balance Nationals Indoor. In April
+              2016, he swept the 100 m and 200 m at the Arcadia Invitational. In
+              June 2016, he won the 100 m in 10.08 s at the USA Junior
+              Championships.
+            </p>
+            <p>
+              Olympic Trials & World U20: In July 2016, he competed at the U.S.
+              Olympic Trials. While he did not advance in the 100 m, he won his
+              200 m semi-final and placed fourth in the final with a time of
+              20.09 s, breaking a 31-year-old national high school record.
+              Although he narrowly missed the 2016 Olympic team, he went on to
+              become a double gold medalist at the 2016 World U20 Championships,
+              winning the 100 m and the 4 × 100 m relay titles.
+            </p>
+            <p>
+              The Rise to Global Dominance (2017–2019): At the World
+              Championships in Doha in 2019, he captured his first major outdoor
+              titles, winning gold in the 200 m and the 4x100 m relay. In 2022
+              in Eugene, Lyles defended his 200 m title in spectacular fashion,
+              clocking 19.31 seconds and shattering Michael Johnson’s
+              26-year-old American record.
+            </p>
+            <p>
+              Achieving the "Treble" and Olympic Glory (2023–2024): In 2023 in
+              Budapest, Lyles achieved a historic "sprint treble," winning three
+              gold medals (100 m, 200 m, and 4x100 m relay). At the 2024 Paris
+              Olympics, Lyles fulfilled his lifelong dream by winning the
+              Olympic Gold medal in the 100 m in a historic photo finish.
+            </p>
+          </div>
+        </section>
 
-            <section id="content-photos" class="hidden">
-                <h2>Photo Gallery</h2>
-                <div class="photos-flex">
-                    <img src="/Training/4IAABYUBBYI6VBGCA6JNQWIZCE.jpg" alt="Noah lifting" class="photo-item training">
-                    <img src="/Training/2019-02-21T061054Z_1_LYNXNPEF1K0AL_RTROPTP_2_ATHLETICS-LYLES.webp" alt="Noah training" class="photo-item training">
-                    <img src="/Training/255272.jpg" alt="Noah stretching" class="photo-item training">
-                    <img src="/Training/hq720.jpg" alt="Noah lifting" class="photo-item training">
-                    <img src="/Training/IMG_2477.webp" alt="Noah running" class="photo-item training">
-                    <img src="/Training/noah-lyles-olympics-gq-june-july-2021-03.webp" alt="Noah stretching" class="photo-item training">
-                    <img src="/Training/unnamed.png" alt="Noah stretching in rain" class="photo-item training">
-                    <img src="/Races/64ea5b6f184c3ee07f84f49e.jpg" alt="Noah win" class="photo-item race">
-                    <img src="/Races/2037c28605984f08f7048ce58d541543,e884ea4.webp" alt="Noah winning" class="photo-item race">
-                    <img src="/Races/JXRKWNIKLRGQFJHGJHRYVA2LMU.avif" alt="Noah winning" class="photo-item race">
-                    <img src="/Races/Noah-Lyles-gold-medal-win-Mens-Relay-World-Athletics-Championships-Budapest-2023.webp" alt="Noah running" class="photo-item race">
-                    <img src="/Races/noah-lyles-olympics-080524-1-2940ed0b03af4cf0b39eea622f339e9d.jpg" alt="Noah winning" class="photo-item race">
-                    <img src="/Races/track-world-champs-lyles-errington3-videoSixteenByNineJumbo1600.jpg" alt="Noah running" class="photo-item race">
-                    <img src="/Races/αρχείο λήψης.jpg" alt="Noah finishing" class="photo-item race">
-                </div>
-            </section>
+        <section id="content-photos" class="hidden">
+          <h2>Photo Gallery</h2>
+          <div class="photos-flex">
+            <img
+              src="/Training/4IAABYUBBYI6VBGCA6JNQWIZCE.jpg"
+              alt="Noah lifting"
+              class="photo-item training"
+            />
+            <img
+              src="/Training/2019-02-21T061054Z_1_LYNXNPEF1K0AL_RTROPTP_2_ATHLETICS-LYLES.webp"
+              alt="Noah training"
+              class="photo-item training"
+            />
+            <img
+              src="/Training/255272.jpg"
+              alt="Noah stretching"
+              class="photo-item training"
+            />
+            <img
+              src="/Training/hq720.jpg"
+              alt="Noah lifting"
+              class="photo-item training"
+            />
+            <img
+              src="/Training/IMG_2477.webp"
+              alt="Noah running"
+              class="photo-item training"
+            />
+            <img
+              src="/Training/noah-lyles-olympics-gq-june-july-2021-03.webp"
+              alt="Noah stretching"
+              class="photo-item training"
+            />
+            <img
+              src="/Training/unnamed.png"
+              alt="Noah stretching in rain"
+              class="photo-item training"
+            />
+            <img
+              src="/Races/64ea5b6f184c3ee07f84f49e.jpg"
+              alt="Noah win"
+              class="photo-item race"
+            />
+            <img
+              src="/Races/2037c28605984f08f7048ce58d541543,e884ea4.webp"
+              alt="Noah winning"
+              class="photo-item race"
+            />
+            <img
+              src="/Races/JXRKWNIKLRGQFJHGJHRYVA2LMU.avif"
+              alt="Noah winning"
+              class="photo-item race"
+            />
+            <img
+              src="/Races/Noah-Lyles-gold-medal-win-Mens-Relay-World-Athletics-Championships-Budapest-2023.webp"
+              alt="Noah running"
+              class="photo-item race"
+            />
+            <img
+              src="/Races/noah-lyles-olympics-080524-1-2940ed0b03af4cf0b39eea622f339e9d.jpg"
+              alt="Noah winning"
+              class="photo-item race"
+            />
+            <img
+              src="/Races/track-world-champs-lyles-errington3-videoSixteenByNineJumbo1600.jpg"
+              alt="Noah running"
+              class="photo-item race"
+            />
+            <img
+              src="/Races/finish_line.jpg"
+              alt="Noah finishing"
+              class="photo-item race"
+            />
+          </div>
+        </section>
 
-            <section id="content-dynamic" class="hidden">
-                <h2 id="dynamic-title">Data Table</h2>
-                <div id="table-container">
-                    <table id="data-table"></table>
-                </div>
-            </section>
+        <section id="content-dynamic" class="hidden">
+          <h2 id="dynamic-title">Data Table</h2>
+          <div id="table-container">
+            <table id="data-table"></table>
+          </div>
+        </section>
 
-            <section id="content-admin" class="hidden">
-                <h2>Admin Access</h2>
-                <form id="login-form">
-                    <input type="text" placeholder="Username" id="user" required>
-                    <input type="password" placeholder="Password" id="pass" required>
-                    <button type="submit">Login</button>
-                </form>
-                <div id="admin-dashboard" class="hidden">
-                    <h3>Data Management</h3>
-                    <div id="admin-status-msg"></div>
-                </div>
-            </section>
-        </main>
+        <section id="content-admin" class="hidden">
+          <h2>Admin Access</h2>
+          <form id="login-form">
+            <input type="text" placeholder="Username" id="user" required />
+            <input type="password" placeholder="Password" id="pass" required />
+            <button type="submit">Login</button>
+          </form>
+          <div id="admin-dashboard" class="hidden">
+            <h3>Data Management</h3>
+            <div id="admin-status-msg"></div>
+          </div>
+        </section>
+      </main>
 
-        <footer>
-            <p>&copy; 2025 - Web Application Assignment - Athlete Biography</p>
-            <p>George Koutsikos | AM: 2122062</p>
-        </footer>
+      <footer>
+        <p>&copy; 2025 - Web Application Assignment - Athlete Biography</p>
+        <p>George Koutsikos | AM: 2122062</p>
+      </footer>
     </div>
 
     <script src="javascript.js"></script>
-</body>
+  </body>
 </html>
