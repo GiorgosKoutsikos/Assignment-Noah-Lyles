@@ -9,6 +9,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(__dirname));
 
+// Route για την αρχική σελίδα
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 const readData = (file) =>
   JSON.parse(fs.readFileSync(path.join(__dirname, file), 'utf8'));
 const writeData = (file, data) =>
@@ -74,8 +79,12 @@ app.post('/api/login', (req, res) => {
   }
 });
 
+// Εξαγωγή του app για το Vercel
 module.exports = app;
 
-app.listen(PORT, () =>
-  console.log(`Server running at http://localhost:${PORT}`),
-);
+// Εκκίνηση μόνο όταν τρέχει τοπικά
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () =>
+    console.log(`Server running at http://localhost:${PORT}`),
+  );
+}
